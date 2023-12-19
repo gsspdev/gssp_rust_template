@@ -1,10 +1,21 @@
-[workspace]
-# members = ["gssp_utils"]
-workspace = { members = ["gssp_utils"] }
 [package]
 name = "gssp_rust_template"
 version = "0.1.0"
+authors = ["gsspdev"]
 edition = "2021"
+rust-version = "1.76.0-nightly"
+description = "A template for gsspdev's rust projects"
+documentation = "https://github.com/gsspdev/gssp_rust_template/README.md"
+readme = "README.md"
+# homepage = ""
+repository = "https://github.com/gsspdev/gssp_rust_template"
+license = "MIT"
+# license-file = ""
+keywords = ["gsspdev", "rust", "template"]
+
+[workspace]
+# members = ["gssp_utils"]
+workspace = { members = ["gssp_utils"] }
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
