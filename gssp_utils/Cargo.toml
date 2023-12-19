@@ -13,4 +13,3 @@ cc.workspace = true
 
 [dev-dependencies]
 rand.workspace = true
-

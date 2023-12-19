@@ -8,17 +8,22 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[workspace.dependencies]
+regex = { workspace = true, features = ["unicode"] }
+tempdir = "0.3.7"
+rand = "0.8.4"
+cc = "1.0.67"
+
 [dependencies]
-regex = "1.5.5"
 gssp_utils = { path = "gssp_utils" }
+regex = "1.5.5"
+
+# Build-dependencies are used only when compiling a package for building.
+[build-dependencies]
+cc = "1.0.67"
 
 # Dev-depencies are used for compiling tests, examples, and benchmarks.
 # They are not used when compiling for building, and not propogated to other packages
-
-[dev-dependencis]
-tempdir = "0.3.7"
-rand = "0.8.4"
-
-# Build-dependencies are used only when compiling a package for building.
-[built-dependencies]
-cc = "1.0.67"
+[dev-dependencies]
+regex = { workspace = true}
+rand = { workspace = true }
