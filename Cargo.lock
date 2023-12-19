@@ -12,7 +12,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "gssp-rust-template"
+name = "gssp_rust_template"
 version = "0.1.0"
 dependencies = [
  "gssp_utils",

@@ -1,6 +1,8 @@
+[workspace]
+# members = ["gssp_utils"]
 workspace = { members = ["gssp_utils"] }
 [package]
-name = "gssp-rust-template"
+name = "gssp_rust_template"
 version = "0.1.0"
 edition = "2021"
 
@@ -9,3 +11,14 @@ edition = "2021"
 [dependencies]
 regex = "1.5.5"
 gssp_utils = { path = "gssp_utils" }
+
+# Dev-depencies are used for compiling tests, examples, and benchmarks.
+# They are not used when compiling for building, and not propogated to other packages
+
+[dev-dependencis]
+tempdir = "0.3.7"
+rand = "0.8.4"
+
+# Build-dependencies are used only when compiling a package for building.
+[built-dependencies]
+cc = "1.0.67"
