@@ -15,8 +15,13 @@ dependencies = [
 name = "gssp-rust-template"
 version = "0.1.0"
 dependencies = [
+ "gssp_utils",
  "regex",
 ]
+
+[[package]]
+name = "gssp_utils"
+version = "0.1.0"
 
 [[package]]
 name = "memchr"
