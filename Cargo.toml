@@ -28,6 +28,7 @@ cc = "1.0.67"
 [dependencies]
 gssp_utils = { path = "gssp_utils" }
 regex = "1.5.5"
+serde = { version = "1.0.193", features = ["alloc", "derive", "rc"] }
 
 # Build-dependencies are used only when compiling a package for building.
 [build-dependencies]
